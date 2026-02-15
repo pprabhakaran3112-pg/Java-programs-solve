@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+        System.out.print("Enter string: ");
+        String s = in.nextLine();
+        String result="";
+      for(int i=0;i<s.length();i++){
+          char ch=s.charAt(i);
+          
+          if(result.indexOf(ch) == -1){
+            result=result+ch; 
+          }
+      }
+      System.out.print("output: "+result);
+    }
+}
